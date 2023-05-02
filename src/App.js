@@ -40,10 +40,10 @@ function App() {
         {army.map(robot => (
           <div key={robot.id}>
             <img src={robot.avatar_url} alt={robot.name} />
-            <h3>{robot.name}</h3>
-            <h2>{robot.health}</h2>
-            <h2>{robot.damage}</h2>
-            <h2>{robot.armor}</h2>
+            <h3>Name:{robot.name}</h3>
+            <h2>Health:{robot.health}</h2>
+            <h2>Damage:{robot.damage}</h2>
+            <h2>Armor:{robot.armor}</h2>
             <button onClick={() => dischargeRobot(robot)}>x</button>
           </div>
         ))}
@@ -53,10 +53,10 @@ function App() {
         {robots.map(robot => (
           <div key={robot.id} onClick={() => handleRobotClick(robot)}>
             <img src={robot.avatar_url} alt={robot.name} />
-            <h2>Name{robot.name}</h2>
-            <h2>Health{robot.health}</h2>
-            <h2>Health{robot.damage}</h2>
-            <h2>Armor{robot.armor}</h2>
+            <h2>Name:{robot.name}</h2>
+            <h2>Health:{robot.health}</h2>
+            <h2>Damage:{robot.damage}</h2>
+            <h2>Armor:{robot.armor}</h2>
           </div>
         ))}
       </div>
