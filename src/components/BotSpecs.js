@@ -1,6 +1,7 @@
 import React from 'react';
 
 const BotSpecs = ({ bot }) => {
+  console.log("BotSpecs props: ", bot);
   return (
     <div>
       <h2>{bot.name} ({bot.class})</h2>
