@@ -1,4 +1,5 @@
 import React from 'react';
+import SortBar from './components/SortBar';
 
 const SortBar = ({ sortBots }) => {
   return (

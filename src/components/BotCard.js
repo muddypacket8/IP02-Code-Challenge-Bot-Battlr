@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function BotCard({ bot, selectedBots, setSelectedBots }) {
   const handleEnlistClick = () => {
     if (!selectedBots.some(selectedBot => selectedBot.id === bot.id)) {

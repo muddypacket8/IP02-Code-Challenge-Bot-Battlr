@@ -1,4 +1,5 @@
 import React from 'react';
+import YourBotArmy from './components/YourBotArmy';
 import BotCard from './BotCard';
 
 const YourBotArmy = ({ bots, removeFromArmy }) => {

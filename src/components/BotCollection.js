@@ -1,4 +1,5 @@
 import React from 'react';
+import BotCollection from './components/BotCollection';
 import BotCard from './BotCard';
 
 function BotCollection({ bots, selectedBots, setSelectedBots, sortType, classFilter }) {
