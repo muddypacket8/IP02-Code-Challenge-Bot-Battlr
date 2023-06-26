@@ -6,7 +6,7 @@ function App() {
   const [selectedRobot, setSelectedRobot] = useState(null);
   const [army, setArmy] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://api.jsonserve.com/wnak1r/')
       .then(response => response.json())
       .then(data => setRobots(data))
       .catch(error => console.error(error));
@@ -16,7 +16,7 @@ function App() {
   };
   const dischargeRobot = (robot) => {
     setArmy(army.filter(r => r.id !== robot.id));
-    fetch(`http://localhost:8001/bots/${robot.id}`, {
+    fetch(`https://api.jsonserve.com/wnak1r/${robot.id}`, {
       method: 'DELETE'
     })
       .then(response => response.json())
